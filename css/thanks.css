@@ -1,0 +1,112 @@
+.main_wrapper {
+  background-image: url(../images/bg-img.png);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.header {
+  padding: 30px 0;
+}
+.lnt_logo {
+  width: 215px;
+  margin-right: 30px;
+}
+.wishfin_logo {
+  width: 85px;
+}
+.thanks_wrapper {
+  background: rgba(255, 222, 84, 0.3);
+  border: 5px solid #000000;
+  text-align: center;
+  min-height: 355px;
+  padding: 80px 30px;
+  max-width: 600px;
+  width: 100%;
+  margin: 80px auto;
+}
+.thanks_wrapper h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.0124em;
+  color: #2c3041;
+}
+.thanks_wrapper p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: -0.0048em;
+  color: #373c51;
+  margin: 15px 0 30px;
+}
+.processing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgb(0 0 0 / 13%);
+  border-radius: 6px;
+  padding: 10px;
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+}
+.processing .working {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #27364b;
+}
+@media only screen and (max-width: 1199.98px){
+  .thanks_wrapper {
+    margin: 45px auto;
+  }
+}
+@media only screen and (max-width: 991.98px) {
+  .main_wrapper {
+    background-size: cover;
+  }
+  .lnt_logo {
+    margin-right: 0;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .processing {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .processing .working {
+    line-height: 19px;
+    text-align: left;
+  }
+  .thanks_wrapper {
+    margin: 35px auto;
+  }
+}
+@media only screen and (max-width: 575.98px) {
+  .header {
+    padding: 15px 0;
+  }
+  .lnt_logo {
+    width: 150px;
+  }
+  .wishfin_logo {
+    width: 65px;
+  }
+  .processing {
+    gap: 5px;
+  }
+  .thanks_wrapper p {
+    line-height: 22px;
+    margin: 10px 0 25px;
+  }
+  .thanks_wrapper {
+    padding: 80px 10px;
+  }
+}

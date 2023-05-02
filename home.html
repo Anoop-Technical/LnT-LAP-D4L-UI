@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LnT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+    <div class="main_wrapper">
+        <div class="container">
+            <div class="header">
+                <img class="img-fluid lnt_logo" src="./images/lnt-logo.png" alt="lnt-logo">
+                <img class="img-fluid wishfin_logo" src="./images/wishfin-logo.png" alt="wishfin-logo">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="top_heading">
+                    <h1>Don't let <span class="txt_bold">Anything</span> in way of your <span class="txt_bold">Dreams,</span></h1>
+                    <p>Fulfill with Loan Against Property from <span class="txt_bold">L&T Finance.</span></p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                    <div class="features">
+                        <div class="feature_row">
+                            <img class="img-fluid" src="./images/icon-1.png" alt="icon">
+                            <span>Loan Amount upto ₹25 Lacs</span>
+                        </div>
+                        <div class="feature_row">
+                            <img class="img-fluid" src="./images/icon-2.png" alt="icon">
+                            <span>Lowest ROI starting from 9.75%*</span>
+                        </div>
+                        <div class="feature_row">
+                            <img class="img-fluid" src="./images/icon-3.png" alt="icon">
+                            <span>Tenure upto 30 years.</span>
+                        </div>
+                        <div class="feature_row">
+                            <img class="img-fluid" src="./images/icon-4.png" alt="icon">
+                            <span>100% Digital Process</span>
+                        </div>
+                        <div class="feature_row">
+                            <img class="img-fluid" src="./images/icon-5.png" alt="icon">
+                            <span>Safe & Secure.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-8 mb-5">
+                    <div class="form_wrapper">
+                        <form action="" id="basicDetails">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="form-title">Let’s Get Started</div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                    <input type="hidden" name="loan_amount" id="loan_amount" value="4,00,000">
+                                    <div class="form-group __slider">
+                                        <label for="amount_slider">Desired Loan <span class="rangedigit">₹ <strong id="demo">4,00,000</strong></span></label>
+                                        <div class="rSlider position-realtive">
+                                            <input type="range" value="400000" class="__range_slider" id="amount_slider" name="amount_slider" min="50000" max="2500000" step="10000">
+                                            <div class="slider_max_min">
+                                                <span>₹ 50,000</span>
+                                                <span>₹ 25,00,000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <label for="fullName">Full Name</label>
+                                        <input name="fullName" type="text" id="fullName" class="form-control required" maxlength="50" value="" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <label for="mobileNumber">Mobile Number</label>
+                                        <input name="mobileNumber" type="tel" id="mobileNumber" maxlength="10" class="form-control required" value="" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <label for="emailId">Email ID</label>
+                                        <input name="emailId" type="text" id="emailId" maxlength="50" class="form-control required" value="" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <label for="dob">Date Of Birth</label>
+                                        <input name="dob" type="text" id="dob" readonly="" class="form-control required" value="" aria-required="true">
+                                    </div>                                   
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <label for="panCard">PAN Card</label>
+                                        <input name="panCard" type="text" id="panCard" maxlength="10" class="form-control required" value="" aria-required="true">
+                                    </div>                              
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <label for="currentCity">City</label>
+                                        <select name="currentCity" id="currentCity" class="form-control required" aria-required="true">
+                                            <option value="">Please Select</option>
+                                            <option value="noida">Noida</option>
+                                            <option value="kanpur">Kanpur</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <label for="propertyIdentified">Property Identified</label>
+                                        <div class="radio-btns">
+                                            <label class="radio-option">
+                                                <input type="radio" name="propertyIdentified" id="propertyIdentified" class="required" value="1" aria-required="true">
+                                                <i></i>
+                                                <span>Male</span>
+                                            </label>
+                                            <label class="radio-option">
+                                                <input type="radio" name="propertyIdentified" class="required" value="0" aria-required="true">
+                                                <i></i>
+                                                <span>Female</span>
+                                            </label>
+                                        </div>
+                                    </div>                             
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <label for="propertyLocation">Property Location</label>
+                                        <input name="propertyLocation" type="text" id="propertyLocation" class="form-control required" maxlength="50" value="" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <label for="employmentTpye">Employment Type</label>
+                                        <div class="radio-btns">
+                                            <label class="radio-option">
+                                                <input type="radio" name="employmentTpye" id="employmentTpye" class="required" value="1" aria-required="true">
+                                                <i></i>
+                                                <span>Salaried</span>
+                                            </label>
+                                            <label class="radio-option">
+                                                <input type="radio" name="employmentTpye" class="required" value="0" aria-required="true">
+                                                <i></i>
+                                                <span>Self Employed</span>
+                                            </label>
+                                        </div>
+                                    </div>                           
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="form-group">
+                                        <label class="check_show">
+                                            <input type="checkbox" name="accept" id="accept" class="required" checked="checked" value="1" aria-required="true">
+                                            <i></i>I hereby confirm to MMPL & its partnering bank L&T Financial Services to contact to explain the product in detail. I also agree with the Privacy Policy & Terms & Conditions of MMPL.
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 mt-lg-4 mt-md-0 mt-sm-0 mt-0 text-center">
+                                    <button type="submit" class="submit_btn mx-auto">CONFIRM<img class="img-fluid btnArrow" src="./images/btnArrow.png" alt=""></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/autoNumeric.js"></script>
+    <script src="./js/rangeslider.js"></script>
+    <script src="./js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+.submit_btn, .addsubmit_btn {
+  background: #3CAEF2 0% 0% no-repeat padding-box;
+  border-radius: 2px;
+  padding: 16px 24px;
+  height: 50px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 15px 0;
+  border: 0;
+  text-transform: uppercase;
+  max-width: 304px;
+}
+
+.submit_btn:hover,
+.submit_btn:focus,
+.submit_btn:active,
+.addsubmit_btn:hover,
+.addsubmit_btn:active,
+.addsubmit_btn:focus {
+  text-decoration: none;
+  box-shadow: none;
+  outline: none;
+}
+@media screen and (max-width: 575.98px) {
+  .hdfc_logo {
+    width: 115px;
+  }
+  .wishfin_logo {
+    width: 65px;
+  }
+}
